@@ -3,10 +3,10 @@ import numpy as np
 import pandas as pd
 
 # Load saved model and preprocessors
-model = joblib.load("mlp_model.pkl")
-scaler = joblib.load("scaler.pkl")
-nominal_encoder = joblib.load("nominal_encoder.pkl")
-ordinal_encoder = joblib.load("ordinal_encoder.pkl")
+model = joblib.load("model/mlp_model.pkl")
+scaler = joblib.load("model/scaler.pkl")
+nominal_encoder = joblib.load("model/nominal_encoder.pkl")
+ordinal_encoder = joblib.load("model/ordinal_encoder.pkl")
 
 # Define feature types
 numerical_cols = [
